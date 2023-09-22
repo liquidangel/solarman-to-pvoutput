@@ -1,6 +1,6 @@
 const axios = require('axios');
 
-const BASE_URL = process.env.PVOUTPUT_BASEURL;
+const BASE_URL = 'https://pvoutput.org/service/r2';
 
 module.exports = {
   addStatus: (ouptutDate, outputTime, energyGeneration, energyConsumption, temperature, voltage, cumulative) => axios({
